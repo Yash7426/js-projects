@@ -5,13 +5,7 @@ const ulEl = document.getElementById("ul-el")
 const deleteBtn = document.getElementById("delete-btn")
 const leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads"))
 const tabBtn = document.getElementById("tab-btn")
-// toFixed(n) - to round off to n decimal places
-// Number(str) - to conv str to number 
-// 
-// 1 meter = 3.281 feet
-// 1 liter = 0.264 gallon
-// 1 kilogram = 2.204 pound
-// 
+
 
 if (leadsFromLocalStorage) 
 {

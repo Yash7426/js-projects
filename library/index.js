@@ -25,7 +25,6 @@ function add(){
         ur.checked=false;
     } 
     library.push(book);
-    console.log(book);
     n.value='';
     t.value='';
     p.value='';
@@ -48,48 +47,19 @@ function add(){
     n.focus();
     showAll();
 }
-// let d=document.createElement("div");
-//     let text=
-//     `<ul>
-//         <li>Author Name : ${library[i].name}</li>
-//         <li>Title : ${library[i].title}</li>
-//         <li>No. of Pages : ${library[i].no_of_pages}</li>
-//         <li class="${i}">Read Status : ${library[i].read_status}</li>
-//     </ul>
-//     <input type="button" value="Change Read Status" name="toggle" id="togg" onclick="tg(${i})">
-//     <input type="button" value="Delete Book" name="delete" id="del" onclick="del(${i})">
-//     `
-//     d.innerHTML=text;
-//     cont.appendChild(d);
-
 
 function del(i){
-    console.log(0)
-    console.log(i)
-    // library.splice(i,1);
     d=document.querySelector(`.class${i}`)
-    console.log(d);
     cont.removeChild(d)
-    console.log(library);
-
-    // cont.innerHTML=``;
-    // render();
 }
 function tg(i){
-    console.log(0)
-    console.log(i)
     let o=library[i];
-    console.log(o);
     if(o.read_status===r.value){
         o.read_status=ur.value;
-        
-        // r.checked=false;
     }else{
         o.read_status=r.value;
-        // ur.checked=false;
     } 
     d=document.querySelector(`.class${i}`)
-    console.log(d);
     let text=
     `<ul>
     <li>Author Name : ${o.name}</li>
@@ -101,9 +71,6 @@ function tg(i){
     <input type="button" value="Delete Book" name="delete" id="del" onclick="del(${i})">
     `
     d.innerHTML=text;
-    // cont.appendChild(d);
-
-
 }
 last=document.querySelector(".last")
 function showAll(){

@@ -11,25 +11,18 @@ function create(){
     } 
     let arr=['black','blue','red','yellow','green','purple','skyblue','lightgreen','pink'];
     let a=document.querySelectorAll('.d')
-    console.log(a)
     let s=Array.from(a);
-    console.log(s)
     s.forEach(item => {
         item.addEventListener('mouseover',()=>{
             let index=Math.floor(Math.random()*9);
-            console.log(index)
-            console.log(arr[index])
             item.classList.toggle(arr[index])})
+            // better way to give random color
             // e.target.setAttribute("style", `background-color:rgb(${getRandomInt(50, 255)}, ${getRandomInt(50, 255)}, ${getRandomInt(50, 255)});`);
             // function getRandomInt(min, max) {
             //     min = Math.ceil(min);
             //     max = Math.floor(max);
             //     return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
             // }
-            // better way to give random color
-        console.log(item);
-        // index=Math.floor(Math.random()*6);
-
     })
 }
 function nw(){
@@ -50,12 +43,3 @@ function nw(){
 }
 create();
 
-// hov=document.querySelectorAll(".d")
-// let arrnew=Array.from(hov);
-// for(let i=0;i<arrnew.length;i++){
-//     arrnew[i].addEventListener("mouseover",cha);
-// }
-// let arrnew=Array.from(hov);
-// for(let i=0;i<arrnew.length;i++){
-//     arrnew[i].addEventListener("mouseover",cha);
-// }
