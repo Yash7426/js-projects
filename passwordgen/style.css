@@ -1,0 +1,67 @@
+.container{
+    height: 35vh;
+    width: 50vw;
+    margin: 10vh auto;
+    padding: 7vh 5vw;
+    background-color: black;
+}
+.main{
+    margin-left: 1vw;
+}
+p{
+    margin: 0;
+}
+.p1{
+    font-weight: 900;
+    color: white;
+    font-size: 1.7em;
+}
+.p2{
+    font-weight: 800;
+    font-size: 2em;
+    color: #7fffae;    
+}
+.p3{
+    font-size: 1em;
+    color: whitesmoke;
+}
+button{
+    margin-top: 2vh;
+    background-color: #0d7533;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.7em;
+    border-radius: 6px;
+}
+.display{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.pass{
+    background-color: rgb(177, 193, 190);
+    color: #7fffae;
+    background-color: bisque;
+    width: 50%;
+    height: 7vh;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+}
+input[type="text"]{
+    height: 3vh;
+}
+.form{
+    margin-top: 1vh;
+}
+input{
+    height: 1.4vh;
+    cursor: pointer;
+}
+label{
+    font-size: 0.8em;
+    color: white;
+}

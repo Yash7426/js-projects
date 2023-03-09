@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="con">
+            <div class="team team1">
+                <h3 id="t">HOME</h3>
+                <div class="score" id="t1">0</div>
+                <div class="update">
+                    <div class="button" onclick="inc1()">+1</div>
+                    <div class="button" onclick="inc2()">+2</div>
+                    <div class="button" onclick="inc3()">+3</div>
+                </div>
+            </div>
+            <div class="team team2">
+                <h3>GUEST</h3>
+                <div class="score" id="t2">0</div>
+                <div class="update">
+                    <div class="button" onclick="inc4()">+1</div>
+                    <div class="button" onclick="inc5()">+2</div>
+                    <div class="button" onclick="inc6()">+3</div>
+                </div>  
+            </div>
+            <button id="reset" onclick="reset()">New Game</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

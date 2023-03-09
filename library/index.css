@@ -1,0 +1,100 @@
+body{
+    background-color: rgba(0, 0, 0, 0.749);
+}
+h1{
+    text-align: center;
+    color: rgb(250, 137, 0);
+}
+form{
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px rgba(0, 255, 255, 0.427);
+
+}
+.outer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.outer div{
+    width: 100%;
+}
+label,fieldset{
+    margin: 0px;
+    font-size: 1.5rem;
+    color: aqua;
+}
+fieldset{
+    border: 1px solid aqua;
+}
+input{
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid aqua;
+    border-radius: 10px;
+    color: aqua;
+}
+input::placeholder{
+    color: aqua;
+}
+label[for="read"],label[for="read1"]{
+    display: inline;
+    color: aqua;
+}
+#new{
+    width: 20%;
+    padding: 10px;
+    font-size: 18px;
+}
+h3{
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 22px;
+    color: rgb(250, 137, 0);
+}
+.container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.container div{
+    padding: 10px 20px;
+    flex-basis: 18%;
+    box-sizing: border-box;
+    background-color: black;
+    color: aqua;
+    font-size: 20px;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+li{
+    padding: 2px;
+}
+button{
+    margin: 20px 20px;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid aqua;
+    border-radius: 10px;
+    color: aqua;
+}
+.last{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.last div{
+    padding: 10px 20px;
+    flex-basis: 18%;
+    box-sizing: border-box;
+    background-color: black;
+    color: aqua;
+    font-size: 20px;
+}
