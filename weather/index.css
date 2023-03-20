@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('https://picsum.photos/seed/6334/2305/1200');
+    font-family: cursive;
+}
+.search{
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    overflow: hidden;
+}
+input{
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 6px 15px;
+    font-size: 24px;    
+    caret-color: green;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+input:focus{
+    outline: none;
+    border: 2px solid rgb(138, 136, 131);
+}
+.error{
+    height: 50px;
+    transform: translateY(50px);
+    transition: transform 0.1s ease-in;
+}
+.error.active{
+    transform: translateY(0px);
+}
+.outer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20vh 10vw;
+    width: 60vw;
+}
+h1{
+    font-size: 40px;
+}
+small{
+    font-size: 22px;
+}
+p{
+    color: black;
+    font-size: 30px;
+}
+.temp{
+    font-size: 80px;
+    position: relative;
+}
+.circle{
+    display: inline-block;
+    border: 4px solid rgb(0, 0, 0);
+    width: 2px;
+    border-radius: 50%;
+    height: 2px;
+    position: absolute;
+    padding: 1px;
+    margin: -5px;
+    top: 20px;
+}
+.circle2{
+    display: inline-block;
+    position: absolute;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    width: 1px;
+    height: 1px;
+    padding: 1px;
+    margin: -1px -2px;
+}
+.inner{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+.extra{
+    border-left: 2px solid black;
+    padding-left: 20px;
+    font-size: 10px;
+}
+.extra p{
+    font-size: 24px;
+}
+
